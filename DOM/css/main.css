@@ -1,0 +1,8 @@
+/* creating two classnames based on what color we want to change our text */
+.color-change {
+    color: turquoise
+}
+
+.different-color {
+    color: blueviolet
+}

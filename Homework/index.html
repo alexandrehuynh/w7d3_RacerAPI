@@ -1,0 +1,53 @@
+!<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./js/homework.js" defer></script>
+<link rel="stylesheet" href="./css/main.css">
+<title>We Go VROOM VROOM</title>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h2>F1 Driver Standings</h2>
+        <form id="f1Form" class="mb-4">
+          <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              Season: <input type="text" id="season" class="form-control" />
+            </div>
+            <div class="col-auto">
+              Round: <input type="text" id="round" class="form-control" />
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary">Get Standings</button>
+              <button type="button" id="clearButton" class="btn btn-warning">Clear</button>
+            </div>
+          </div>
+        </form>
+    
+        <table id="f1Table" class="table table-striped">
+          <thead>
+            <tr>
+              <th>Position</th>
+              <th>Driver</th>
+              <th>Nationality</th>
+              <th>Constructor</th>
+              <th>Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Data rows will go here -->
+          </tbody>
+        </table>
+      </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
